@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+
+/* Preline UI */
+@source "../node_modules/preline/dist/*.js";
+@import "../node_modules/preline/variants.css";
+
+
+
+/* styles.css or App.css */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+}
+
+.alert-animation {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+
